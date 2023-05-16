@@ -12,5 +12,10 @@ namespace IoCDemo.Tests.Business
             // ...
             return new Product { Price = 42d };
         }
+
+        public void UpdateProduct(Product p, int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

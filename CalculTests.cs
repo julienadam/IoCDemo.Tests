@@ -18,6 +18,7 @@ namespace IoCDemo.Tests
             var result = c.ComputeTax(1);
 
             Assert.That(result, Is.EqualTo(8.1792));
+            mockRepo.Verify(x => x.UpdateProduct(It.IsAny<Product>(), 1));
         }
 
         [Test]
